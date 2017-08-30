@@ -3,6 +3,17 @@ from django.shortcuts import render
 from django.views import View
 from django.views.generic import TemplateView
 
+
+
+
+def restaurant_listview(request):
+	template_name='restaurants/restaurants_list.html'
+
+	context={abc:[2,3,4]
+		}
+	return render(request,template_name,context)
+
+
 # Create your views here.
 
 
